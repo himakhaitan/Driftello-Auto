@@ -16,3 +16,25 @@ body {
     animation: moveInZoom 1s ease-out;
     backface-visibility: none;
 }
+
+.heading-secondary {
+    font-size: 4rem;
+    letter-spacing: 1.2px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 800;
+
+    &--red {
+        color: $color-primary;
+    }
+
+    &--white {
+        color: $color-white;
+    }
+}
+
+.heading__4 {
+    font-size: 1.7rem;
+    color: $color-primary;
+    text-transform: uppercase;
+}

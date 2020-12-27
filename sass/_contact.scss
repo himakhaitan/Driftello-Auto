@@ -1,0 +1,55 @@
+.section-contact {
+    background-color: $color-secondary;
+    display: grid;
+    grid-template-columns: 1fr 45vw;
+    grid-template-rows: 100vh;
+}
+
+.contact {
+    &__image {
+        overflow: hidden;
+    }
+    &__img {
+        height: 100%;
+    }
+
+    &__body {
+        border-left: 5rem solid $color-primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 8rem;
+
+    }
+
+    &__group {
+        display: grid;
+        grid-template-columns: 4rem 1fr;
+        grid-column-gap: 4rem;
+
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__icon {
+        height: 4rem;
+        width: 4rem;
+        fill: $color-white;
+        filter: brightness(80%);
+    }
+    &__head {
+        grid-column: 2/ -1;
+        grid-row: 1/ 2;
+        align-self: center;
+    }
+
+    &__text {
+        color: white;
+        filter: brightness(80%);
+        grid-column: 2/ -1;
+        grid-row: 2 / 3;
+        width: 80%;
+    }
+}

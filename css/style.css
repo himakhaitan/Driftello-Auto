@@ -79,6 +79,22 @@ body {
   animation: moveInZoom 1s ease-out;
   backface-visibility: none; }
 
+.heading-secondary {
+  font-size: 4rem;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 800; }
+  .heading-secondary--red {
+    color: #FF4C4C; }
+  .heading-secondary--white {
+    color: #fff; }
+
+.heading__4 {
+  font-size: 1.7rem;
+  color: #FF4C4C;
+  text-transform: uppercase; }
+
 .header {
   height: 100vh;
   width: 100%;
@@ -127,3 +143,174 @@ body {
     margin: 1rem auto;
     width: 4rem;
     fill: #262626; }
+
+.section-about {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60vw 1fr;
+  grid-template-rows: 100vh; }
+
+.about__img {
+  position: relative;
+  z-index: -2; }
+
+.about__image {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.about__content {
+  border-right: 5rem solid #FF4C4C;
+  padding: 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.about__button:link, .about__button:visited {
+  background-color: #262626;
+  height: 6rem;
+  width: 6rem;
+  text-align: center;
+  transition: all 0.2s;
+  margin: 0 auto;
+  border-radius: 50%;
+  animation: moveInTop 1s ease-out 1s;
+  animation-fill-mode: backwards;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.25); }
+
+.about__button:hover {
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px); }
+
+.about__button:active {
+  transform: translateY(0);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.25); }
+
+.about__icon {
+  height: 4rem;
+  margin: 1rem auto;
+  width: 4rem;
+  fill: #fff; }
+
+.section-offers {
+  background-color: #262626;
+  border-top: 5rem solid #FF4C4C;
+  text-align: center;
+  padding: 6rem;
+  height: calc(100vh + 6rem);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; }
+
+.offers__content {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5rem; }
+
+.offers__img {
+  width: 80%;
+  border-radius: 3px;
+  box-shadow: 0 1rem 10rem rgba(255, 76, 76, 0.15); }
+
+.offers__text {
+  color: #fff;
+  width: 70%; }
+
+.offers__head {
+  justify-self: center; }
+
+.offers__offer {
+  display: grid;
+  grid-template-rows: min-content;
+  grid-row-gap: 3rem;
+  justify-items: center; }
+
+.section__testimonials {
+  background-color: #fff;
+  border-top: 5rem solid #FF4C4C;
+  height: calc(100vh + 5rem);
+  text-align: center;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.testimonials__image {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%; }
+
+.testimonials__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem; }
+
+.testimonials__offer {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  grid-template-rows: min-content;
+  grid-column-gap: 1.6rem;
+  align-items: center;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 2.2rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+  margin-top: 2rem; }
+
+.testimonials__text {
+  grid-column: 2/ -1;
+  grid-row: 2 / -1;
+  text-align: start; }
+
+.testimonials__head {
+  text-align: start; }
+
+.section-contact {
+  background-color: #262626;
+  display: grid;
+  grid-template-columns: 1fr 45vw;
+  grid-template-rows: 100vh; }
+
+.contact__image {
+  overflow: hidden; }
+
+.contact__img {
+  height: 100%; }
+
+.contact__body {
+  border-left: 5rem solid #FF4C4C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 8rem; }
+
+.contact__group {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-column-gap: 4rem; }
+  .contact__group:not(:last-child) {
+    margin-bottom: 4rem; }
+
+.contact__icon {
+  height: 4rem;
+  width: 4rem;
+  fill: #fff;
+  filter: brightness(80%); }
+
+.contact__head {
+  grid-column: 2/ -1;
+  grid-row: 1/ 2;
+  align-self: center; }
+
+.contact__text {
+  color: white;
+  filter: brightness(80%);
+  grid-column: 2/ -1;
+  grid-row: 2 / 3;
+  width: 80%; }
