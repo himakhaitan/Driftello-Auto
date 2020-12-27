@@ -1,0 +1,18 @@
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading-primary {
+    color: $color-white;
+    font-size: 8.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.2px;
+    line-height: 1;
+    font-weight: bolder;
+    animation: moveInZoom 1s ease-out;
+    backface-visibility: none;
+}
