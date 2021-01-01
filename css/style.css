@@ -112,6 +112,9 @@ body {
   @media only screen and (max-width: 64em) {
     .header {
       height: auto; } }
+  @media only screen and (max-width: 36.35em) {
+    .header {
+      height: 100vh; } }
   .header__box {
     width: 58vw;
     background-color: rgba(255, 76, 76, 0.8); }
