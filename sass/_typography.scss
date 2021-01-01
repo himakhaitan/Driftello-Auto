@@ -15,6 +15,10 @@ body {
     font-weight: bolder;
     animation: moveInZoom 1s ease-out;
     backface-visibility: none;
+
+    @media only screen and (max-width: 36.35rem) {
+        font-size: 6rem;
+    }
 }
 
 .heading-secondary {

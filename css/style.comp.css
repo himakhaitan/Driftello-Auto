@@ -81,9 +81,6 @@ body {
   font-weight: bolder;
   animation: moveInZoom 1s ease-out;
   backface-visibility: none; }
-  @media only screen and (max-width: 36.35rem) {
-    .heading-primary {
-      font-size: 6rem; } }
 
 .heading-secondary {
   font-size: 4rem;
@@ -109,9 +106,6 @@ body {
   background-position: bottom;
   display: flex;
   justify-content: center; }
-  @media only screen and (max-width: 64em) {
-    .header {
-      height: auto; } }
   .header__box {
     width: 58vw;
     background-color: rgba(255, 76, 76, 0.8); }
@@ -166,35 +160,21 @@ body {
     .section-about {
       grid-template-columns: 1fr;
       grid-template-rows: auto; } }
-  @media only screen and (max-width: 56.25em) {
-    .section-about {
-      grid-template-rows: auto; } }
-  @media only screen and (max-width: 64em) {
-    .section-about {
-      grid-template-rows: auto; } }
 
 .about__img {
   position: relative;
   z-index: -2; }
-  @media only screen and (max-width: 36.25em) {
-    .about__img {
-      text-align: center;
-      margin-top: 5rem; } }
 
 .about__image {
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0; }
-  @media only screen and (max-width: 64em) {
-    .about__image {
-      position: relative; } }
   @media only screen and (max-width: 36.25em) {
     .about__image {
       position: relative;
-      width: 80%;
-      clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
-      border: 2rem solid #FF4C4C; } }
+      width: 100%;
+      display: none; } }
 
 .about__content {
   border-right: 5rem solid #FF4C4C;
@@ -208,12 +188,6 @@ body {
   @media only screen and (max-width: 56.25em) {
     .about__content {
       border-right: 3rem solid #FF4C4C; } }
-  @media only screen and (max-width: 36.25em) {
-    .about__content {
-      z-index: -100;
-      padding: 18rem 6rem 10rem 6rem;
-      margin-top: -8rem;
-      border-right: none; } }
 
 .about__button:link, .about__button:visited {
   background-color: #262626;
@@ -256,9 +230,6 @@ body {
       height: auto;
       grid-column-gap: 6rem;
       border-top: 3rem solid #FF4C4C; } }
-  @media only screen and (max-width: 64em) {
-    .section-offers {
-      height: auto; } }
 
 .offers__content {
   margin-top: 7rem;
@@ -296,9 +267,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  @media only screen and (max-width: 64em) {
-    .section__testimonials {
-      height: auto; } }
   @media only screen and (max-width: 56.25em) {
     .section__testimonials {
       height: auto;
@@ -311,7 +279,7 @@ body {
 
 .testimonials__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem; }
 
 .testimonials__offer {
@@ -343,10 +311,6 @@ body {
     .section-contact {
       grid-template-columns: 1fr;
       grid-template-rows: min-content; } }
-  @media only screen and (max-width: 64em) {
-    .section-contact {
-      height: auto;
-      grid-template-rows: auto; } }
 
 .contact__image {
   overflow: hidden; }

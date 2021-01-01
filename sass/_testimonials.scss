@@ -9,6 +9,10 @@
     flex-direction: column;
     justify-content: center;
 
+    @media only screen  and  (max-width: 64em) {
+        height: auto;
+    }
+
     @media only screen and (max-width: 56.25em) {
         height: auto;
         border-top: 3rem solid $color-primary;
@@ -26,7 +30,7 @@
 
     &__content {
         display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(25rem, 1fr) );
+        grid-template-columns: repeat( auto-fit, minmax(30rem, 1fr) );
         grid-gap: 6rem;
     }
 

@@ -8,6 +8,11 @@
         grid-template-columns: 1fr;
         grid-template-rows: min-content;
     }
+
+    @media only screen  and  (max-width: 64em) {
+        height: auto;
+        grid-template-rows: auto;
+    }
 }
 
 .contact {
