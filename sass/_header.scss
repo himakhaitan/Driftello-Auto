@@ -16,6 +16,10 @@
         height: auto;
     }
 
+    @media only screen and (max-width: 36.35em) {
+        height: 100vh;
+    }
+
     &__box{
         width: 58vw;
         background-color: rgba($color: $color-primary, $alpha: 0.8);
