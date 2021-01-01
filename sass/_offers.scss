@@ -8,13 +8,19 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
+
+    @media only screen and (max-width: 56.25em){
+        height: auto;
+        grid-column-gap: 6rem;
+        border-top: 3rem solid $color-primary;
+    }
 }
 
 .offers {
     &__content {
         margin-top: 7rem;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat( auto-fit, minmax(25rem, 1fr) );
         grid-column-gap: 5rem;
     }
 
@@ -27,6 +33,10 @@
     &__text {
         color: $color-white;
         width: 70%;
+
+        @media only screen and (max-width: 56.25em) {
+            margin-bottom: 3rem;
+        }
     }
 
     &__head {

@@ -3,6 +3,11 @@
     display: grid;
     grid-template-columns: 60vw 1fr;
     grid-template-rows: 100vh;
+
+    @media only screen  and  (max-width: 36.25em) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }
 
 .about {
@@ -16,6 +21,12 @@
         position: fixed;
         top: 0;
         left: 0;
+
+        @media only screen  and  (max-width: 36.25em) {
+                position: relative;
+                width: 100%;
+                display: none;
+        }
     }
 
     &__content {
@@ -26,6 +37,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: $color-white;
+
+        @media only screen and (max-width: 56.25em) {
+            border-right: 3rem solid $color-primary;
+        }
     }
 
     &__button:link,

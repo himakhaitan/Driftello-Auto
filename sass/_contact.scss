@@ -3,11 +3,23 @@
     display: grid;
     grid-template-columns: 1fr 45vw;
     grid-template-rows: 100vh;
+
+    @media only screen and (max-width: 37.5em) {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content;
+    }
 }
 
 .contact {
     &__image {
         overflow: hidden;
+
+        @media only screen and (max-width: 37.5em) {
+            width: 100vw;
+            display: none;
+        }
+
+
     }
     &__img {
         height: 100%;
@@ -20,6 +32,10 @@
         justify-content: center;
         align-content: center;
         padding: 8rem;
+
+        @media only screen and (max-width: 56.25em) {
+            border-left: 3rem solid $color-primary;
+        }
 
     }
 
